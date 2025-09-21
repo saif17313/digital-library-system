@@ -20,6 +20,10 @@ interface Ebook {
     public void display() {
         System.out.println("Displaying ebook: " + filename);
     }
+
+    public String getSize() {
+        return "Size of " + filename + " is 2MB";
+    }
 }
 
  class EbookProxy implements Ebook {
